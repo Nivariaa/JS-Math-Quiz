@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Math Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<div id="whole-container">
+		<div id="mainMenu">
+			<p>Select difficulty</p>
+			<select id="selectDifficulty">
+				<option>Easy</option>
+				<option>Normal</option>
+				<option>Hard</option>
+			</select><br>
+			<p>Select operation</p>
+			<select id="selectOperation">
+				<option>Addition</option>
+				<option>Subtraction</option>
+				<option>Multiplication</option>
+				<option>Division</option>
+			</select><br><br>
+			<button id="startGame">Start Game</button>
+		</div>
+		<div id="results">
+			<p id="resultsText"></p>
+			<button id="goToMenu">Back to main menu</button>
+		</div>
+		<div id="game-container">
+			<div id="timer-container"></div>
+			<input type="textField" id="firstDigit" readonly>
+			<input type="textField" id="op" readonly>
+			<input type="textField" id="secondDigit" readonly><br>
+			<input type="textField" id="answerField"><br>
+			<button id="endButton" onclick="evaluatePerformance()">End</button>
+		</div>
+	</div>
+</body>
+</html>
